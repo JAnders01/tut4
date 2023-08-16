@@ -13,3 +13,4 @@ jobs:
     # Run Tests
     - name: Run Tests
       run: mvn clean test
+      working-directory: /JAnders01/tut4/

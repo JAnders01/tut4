@@ -1,0 +1,15 @@
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # Run Tests
+    - name: Run Tests
+      run: mvn clean test

@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
     # Run Tests
     - name: Run Tests
       run: mvn clean test
